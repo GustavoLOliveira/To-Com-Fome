@@ -1,0 +1,160 @@
+:root {
+  --branco: #ffffff;
+  --cinzaEscuro: #292929;
+  --cinza: #2A2F2D;
+  --barraXp: #dcdde0;
+  --bgComida: #FFD900;
+  --bgDoado: #7CB867;
+  --bgMural: #DDDDDD;
+}
+
+.bg-Comida {
+  background-color: var(--bgComida);
+}
+
+.bg-Doado {
+  background-color: var(--bgDoado);
+}
+
+.bg-Mural {
+  background-color: var(--bgMural);
+}
+
+.border-azul {
+  border-left: 10px solid #679BB8;
+}
+
+.border-verde {
+  border-left: 10px solid #7CB867;
+}
+
+.border-vermelho {
+  border-left: 10px solid #B86767;
+}
+
+.bg-tela-terciario {
+  background-color: var(--branco);
+}
+
+.bg-tela-primario {
+  background-color: var(--cinzaEscuro);
+}
+
+.bg-tela-secundario {
+  background-color: var(--cinza);
+}
+
+.bg-bd-campo-primario {
+  background-color: var(--branco);
+  border: 2px solid var(--cinza);
+}
+
+.bg-bd-campo-secundario {
+  background-color: var(--cinza);
+  border: 2px solid var(--branco);
+}
+
+.btn-branco {
+  background-color: var(--branco);
+  border: 2px solid var(--branco);
+  color: var(--cinza);
+  font-weight: bold;
+}
+
+.btn-cinza {
+  background-color: var(--cinza);
+  border: 2px solid var(--cinza);
+  color: var(--branco);
+  font-weight: bold;
+}
+
+.btn-branco:hover {
+  background-color: var(--cinza);
+  color: var(--branco);
+  border: 2px solid var(--branco);
+  font-weight: bold;
+}
+
+.btn-cinza:hover {
+  background-color: var(--branco);
+  border: 2px solid var(--cinza);
+  color: var(--cinza);
+}
+
+.corBranco,
+.corBranco::placeholder,
+.corBranco:focus {
+  color: var(--branco);
+  font-weight: bold;
+}
+
+option,
+.corCinza,
+.corCinza::placeholder,
+.corCinza:focus {
+  color: var(--cinza);
+  font-weight: bold;
+}
+
+.fonte-0 {
+  font-size: 14px;
+}
+
+.fonte-1 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-menu {
+  flex: 1;
+}
+
+.tamanho-img {
+  height: 300px;
+  max-width: 100%;
+}
+
+/* CSS do nivel de XP */
+.experience__bar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.experience__bar > div {
+  background: var(--cinza);
+  border-radius: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 30px;
+  margin: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.experience__bar > div div {
+  background: var(--barraXp);
+  border-radius: 10px;
+  height: 20px;
+  z-index: 1;
+}
+.experience__bar span {
+  background: var(--cinza);
+  height: 60px;
+  width: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1rem;
+  z-index: 0;
+}
+
+span.current__experience {
+  position: absolute;
+  top: -30px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}

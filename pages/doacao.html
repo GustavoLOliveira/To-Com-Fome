@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To Com Fome | Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="bg-tela-primario">
+  <header>
+    <nav class="navbar bg-tela-secundario">
+      <div class="container-fluid">
+
+        <a class="navbar" href="#">
+          <img src="../img/Logo.svg" alt="Logo" width="70" height="70" class="d-inline-block align-text-top ms-5 me-4">
+        </a>
+
+        <div class="col">
+          <h1 class="corBranco m-0">Olá, Ritter Humboldt!</h1>
+        </div>
+
+        <div class="text-end">
+          <div class="row ">
+            <h2 class="corBranco m-0">452</h2>
+            <p class="corBranco m-0">Doações</p>
+          </div>
+        </div>
+
+        <img src="../img/Olho_nav.svg" alt="Icone olho" class="ms-3 me-5" />
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-1 bg-tela-secundario vh-100 p-0 d-flex flex-column">
+
+          <div class="m-0 btn-menu">
+            <div class="bg-menu-deselecionado">
+              <a href="../pages/empresa.html">
+                <img src="../img/Menu_deselecionado.webp" alt="Icone olho" class="p-3 svg-menu-selecionado" />
+              </a>
+            </div>
+            <div class="bg-tela-terciario">
+              <a href="../pages/doacao.html">
+                <img src="../img/Doacao_selecionado.webp" alt="Icone olho" class="p-3" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p><a href="../pages/index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover corBranco h5 p-3">Sair</a></p>
+          </div>
+        </div>
+
+        <div class="col-11 bg-tela-terciario">
+          <h2 class="m-3 mb-5">Doação</h2>
+
+          <div class="row pt-5 d-flex justify-content-center">
+            <div class="col-5 border-end">
+              <p class="h3 m-5">Doação em dinheiro</p>
+
+              <div class="col-6 d-grid mx-auto ps-0 mb-3 input-group-lg">
+                <label for="inputDoado" class="text-start ms-4">Digite o valor $ a ser doado</label>
+                <input type="number" id="inputDoado" class="form-control bg-bd-campo-primario corCinza rounded-5 mt-1" aria-labelledby="doado" placeholder="R$">
+              </div>
+
+              <div class="col-4 d-grid mx-auto ps-0">
+                <select class="form-select bg-bd-campo-primario corCinza rounded-5" aria-label="Selecione o tipo de Cadastro">
+                  <option selected>Forma de pagamento</option>
+                  <option value="1">PIX</option>
+                  <option value="2">CARTÃO DE CRÉDITO</option>
+                  <option value="3">CARTÃO DE DÉBITO</option>
+                  <option value="4">BOLETO</option>
+                </select>
+              </div>
+
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="button" class="btn btn-cinza mt-5 mb-5 rounded-5 btn-lg" data-bs-toggle="button">Doe</button>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <p class="h3 m-5">Doação em alimento</p>
+
+              <div class="col-6 d-grid mx-auto ps-0 mb-3 input-group-lg">
+                <label for="inputAlimento" class="text-start ms-4">Digite a quantidade em KG</label>
+                <input type="text" id="inputAlimento" class="form-control bg-bd-campo-primario corCinza rounded-5 mt-1" aria-labelledby="alimento" placeholder="Kg">
+              </div>
+
+
+              <div class="col-5 text-start mx-auto">
+                <div class="row d-inline-flex">
+
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="naoPerecivel">
+                    <label class="form-check-label" for="naoPerecivel">
+                      Alimento não perecível
+                    </label>
+                  </div>
+
+                  <div class="form-check m-0">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="perecivel">
+                    <label class="form-check-label" for="perecivel">
+                      Alimento perecível
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="button" class="btn btn-cinza mt-5 mb-5 rounded-5 btn-lg" data-bs-toggle="button">Doe</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>
