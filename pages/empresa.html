@@ -10,8 +10,7 @@
 </head>
 
 <body class="bg-tela-primario">
-  <header style="position: fixed;
-  width: 100%; z-index: 3;">
+  <header class="cabecalho">
     <nav class="navbar bg-tela-secundario">
       <div class="container-fluid">
 
@@ -36,32 +35,32 @@
     </nav>
   </header>
 
-  <main style="padding-left: 5rem; padding-top: 6.35rem;">
+  <main class="conteudo">
     <div class="container-fluid text-center">
       <div class="row">
 
-        <div class="col-1 bg-tela-secundario vh-100 p-0 d-flex flex-column" style="top: 0; position: fixed; left: 0; width: auto;">
+        <div class="col-1 bg-tela-secundario vh-100 p-0 d-flex flex-column menu-Lateral">
 
-          <div class="m-0 btn-menu" style="padding-top: 6.35rem;">
+          <div class="m-0 btn-menu">
             <div class="bg-tela-terciario">
               <a href="../pages/empresa.html">
-                <img src="../img/Menu_selecionado.webp" alt="Icone olho" class="p-3 svg-menu-selecionado" />
+                <img src="../img/Menu_selecionado.webp" alt="Icone Menu" class="p-3 svg-menu-selecionado" />
               </a>
             </div>
             <div class="bg-menu-deselecionado">
               <a href="../pages/doacao.html">
-                <img src="../img/Doacao_deselecionado.webp" alt="Icone olho" class="p-3" />
+                <img src="../img/Doacao_deselecionado.webp" alt="Icone Doação" class="p-3" />
               </a>
             </div>
           </div>
 
           <div>
-            <p><a href="../pages/index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover corBranco h5 p-3">Sair</a></p>
+            <p><a href="../index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover corBranco h5 p-3">Sair</a></p>
           </div>
 
         </div>
 
-        <div class="col-8 bg-tela-terciario">
+        <div class="col-8 bg-tela-terciario pb-5">
           <div class="row">
             <h2 class="mt-4 fs-1">Ritter Humboldt</h2>
 
@@ -98,14 +97,14 @@
           <div class="row">
             <div class="text-start">
               <h3 class="ms-5 me-5 mb-0 fs-5 border-top p-3">Historico de doações</h3>
-              <img src="../img/img-historico.webp" alt="Imagem historico de doações">
+              <img src="../img/img-historico.png" alt="Imagem historico de doações" class="tamanho-img-historico rounded-4 ps-5">
             </div>
 
             <div>
               <h3 class="text-start ms-5 mb-0 fs-5 p-3">Fotos das últimas ações</h3>
-              <div class="row">
+              <div class="row ps-5">
                 <div class="col-6">
-                  <img src="../img/Img4.png" alt="Imagem marmita" class="tamanho-img rounded-4">
+                  <img src="../img/img2.webp" alt="Imagem marmita" class="tamanho-img rounded-4">
                   <div class="row">
                     <div class="col d-flex justify-content-end align-items-center gap-1 align-items-center mt-0 me-5">
                       <p class="d-inline-flex mb-0 corCinza">39</p>
@@ -115,7 +114,7 @@
                 </div>
 
                 <div class="col-3">
-                  <img src="../img/Img3.png" alt="Imagem marmita" class="tamanho-img rounded-4">
+                  <img src="../img/img3.webp" alt="Imagem marmita" class="tamanho-img rounded-4">
                   <div class="row">
                     <div class="col d-flex justify-content-end align-items-center gap-1 align-items-center mt-0 me-5">
                       <p class="d-inline-flex mb-0 corCinza">25</p>
@@ -125,7 +124,7 @@
                 </div>
 
                 <div class="col-3">
-                  <img src="../img/Img2.png" alt="Imagem marmita" class="tamanho-img rounded-4">
+                  <img src="../img/img1.webp" alt="Imagem marmita" class="tamanho-img rounded-4">
                   <div class="row">
                     <div class="col d-flex justify-content-end align-items-center gap-1 align-items-center mt-0 me-5">
                       <p class="d-inline-flex mb-0 corCinza">16</p>
@@ -144,17 +143,17 @@
 
             <div class="col-7 corBranco bg-tela-secundario rounded-3 p-2 m-3">
               <p class="m-0">Voluntários totais</p>
-              <p class="m-0">26</p>
+              <p class="m-0 h3">26</p>
             </div>
 
             <div class="col-7 corBranco bg-tela-secundario rounded-3 p-2 mb-3">
               <p class="m-0">Empresas totais</p>
-              <p class="m-0">12</p>
+              <p class="m-0 h3">12</p>
             </div>
 
             <div class="col-7 corBranco bg-tela-secundario rounded-3 p-2 mb-4">
               <p class="m-0">Agricultores totais</p>
-              <p class="m-0">72</p>
+              <p class="m-0 h3">72</p>
             </div>
 
             <div class="col-9 corCinza bg-Comida rounded-3 p-2 mb-4">

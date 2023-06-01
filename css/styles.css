@@ -1,11 +1,31 @@
 :root {
   --branco: #ffffff;
   --cinzaEscuro: #292929;
-  --cinza: #2A2F2D;
+  --cinza: #2a2f2d;
   --barraXp: #dcdde0;
-  --bgComida: #FFD900;
-  --bgDoado: #7CB867;
-  --bgMural: #DDDDDD;
+  --bgComida: #ffd900;
+  --bgDoado: #7cb867;
+  --bgVComida: #ff9447;
+  --bgVDoado: #31b5ff;
+  --bgMural: #dddddd;
+}
+
+.cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.conteudo {
+  padding-left: 5rem;
+  padding-top: 6.35rem;
+}
+
+.menu-Lateral {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: auto;
 }
 
 .bg-Comida {
@@ -16,20 +36,28 @@
   background-color: var(--bgDoado);
 }
 
+.bg-VComida {
+  background-color: var(--bgVComida);
+}
+
+.bg-VDoado {
+  background-color: var(--bgVDoado);
+}
+
 .bg-Mural {
   background-color: var(--bgMural);
 }
 
 .border-azul {
-  border-left: 10px solid #679BB8;
+  border-left: 10px solid #679bb8;
 }
 
 .border-verde {
-  border-left: 10px solid #7CB867;
+  border-left: 10px solid #7cb867;
 }
 
 .border-vermelho {
-  border-left: 10px solid #B86767;
+  border-left: 10px solid #b86767;
 }
 
 .bg-tela-terciario {
@@ -107,6 +135,7 @@ option,
 
 .btn-menu {
   flex: 1;
+  padding-top: 6.35rem;
 }
 
 .tamanho-img {
@@ -114,11 +143,17 @@ option,
   max-width: 100%;
 }
 
+.tamanho-img-historico {
+  height: 330px;
+  max-width: 100%;
+}
+
+
 /* CSS do nivel de XP */
 .experience__bar {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +163,8 @@ option,
   background: var(--cinza);
   border-radius: 25px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   height: 30px;
   margin: 0 1.5rem;
   position: relative;
@@ -155,6 +190,6 @@ span.current__experience {
   position: absolute;
   top: -30px;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }

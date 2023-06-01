@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="bg-tela-primario">
-  <header>
+<body class="bg-tela-terciario">
+  <header class="cabecalho">
     <nav class="navbar bg-tela-secundario">
       <div class="container-fluid">
 
@@ -35,10 +35,11 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container-fluid text-center">
+  <main class="conteudo">
+    <div class="container-fluid text-center ">
       <div class="row">
-        <div class="col-1 bg-tela-secundario vh-100 p-0 d-flex flex-column">
+
+        <div class="col-1 bg-tela-secundario vh-100 p-0 d-flex flex-column menu-Lateral">
 
           <div class="m-0 btn-menu">
             <div class="bg-menu-deselecionado">
@@ -54,16 +55,16 @@
           </div>
 
           <div>
-            <p><a href="../pages/index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover corBranco h5 p-3">Sair</a></p>
+            <p><a href="../index.html" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover corBranco h5 p-3">Sair</a></p>
           </div>
         </div>
 
-        <div class="col-11 bg-tela-terciario">
-          <h2 class="m-3 mb-5">Doação</h2>
+        <div class="col">
+          <h2 class="m-3 mb-5 h1">Doação</h2>
 
           <div class="row pt-5 d-flex justify-content-center">
             <div class="col-5 border-end">
-              <p class="h3 m-5">Doação em dinheiro</p>
+              <p class="h1 m-5">Doação em dinheiro</p>
 
               <div class="col-6 d-grid mx-auto ps-0 mb-3 input-group-lg">
                 <label for="inputDoado" class="text-start ms-4">Digite o valor $ a ser doado</label>
@@ -86,7 +87,7 @@
             </div>
 
             <div class="col-5">
-              <p class="h3 m-5">Doação em alimento</p>
+              <p class="h1 m-5">Doação em alimento</p>
 
               <div class="col-6 d-grid mx-auto ps-0 mb-3 input-group-lg">
                 <label for="inputAlimento" class="text-start ms-4">Digite a quantidade em KG</label>
