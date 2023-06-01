@@ -193,3 +193,31 @@ span.current__experience {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+.navbarLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spaceLinks{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 50px;
+  gap: 20px;
+  align-items: center;
+}
+
+.active{
+  background-color: #FFECBB;
+  border-radius: 25px;
+  padding: 7px 30px !important;
+}
+
+.img-cozinha{
+  position: relative;
+}
+
+.container-text{
+  position: absolute;
+  z-index: 0;
+}
